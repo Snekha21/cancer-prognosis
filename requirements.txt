@@ -1,0 +1,6 @@
+flask == 2.0.3
+requests == 2.27.1
+numpy
+matplotlib
+pandas 
+sklearn
