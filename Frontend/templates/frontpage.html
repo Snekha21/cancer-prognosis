@@ -7,6 +7,14 @@
     <title>CANCER PROGNOSIS</title>
     <link rel ="image" type="images/png" href="images/logo.png">
     <style>
+        #grad {     /* Created with https://www.css-gradient.com */
+background: #F7B8F5;
+background: -webkit-linear-gradient(bottom, #F7B8F5, #C2F3F8);
+background: -moz-linear-gradient(bottom, #F7B8F5, #C2F3F8);
+background: linear-gradient(to top, #F7B8F5, #C2F3F8);
+        
+              }
+            
          *{
             margin:0;
             padding: 0;
@@ -23,7 +31,7 @@
             padding: 0 20px;
             transition: all 200ms linear;
             z-index: 50;
-            background-image: url("https://images.newscientist.com/wp-content/uploads/2020/08/19151113/19-aug_cancer-fatty-jackets.jpg");
+            background-image: url("https://biology.nd.edu/assets/162480/fullsize/molecular.png");
         }
 
         .main-header p{
@@ -31,7 +39,7 @@
             position: relative;
             top: 70px;
             font-size: 70px;
-            font-family: 'Bree Serif', serif;
+            font-family: 'fantasy', fantasy;
             padding: 0 80px;
             color: #ffffff;
 
@@ -63,8 +71,8 @@
             vertical-align: bottom;
             height: 100%;
             color: #ffffff;
-            font-family: serif;
-            font-size: 27px;
+            font-family: fantasy;
+            font-size: 50px;
         }
 
         .logo-holder {
@@ -98,7 +106,7 @@
         .title {
             font-size: 55px;
             font-weight: bold;
-            color: #000000;
+            color: #050004;
             padding: -100px;
         }
 
@@ -108,10 +116,10 @@
         }
 
         .content_sub_heading{
-            font-size: 30px;
+            font-size: 40px;
             font-weight: bold;
-            color: #000000;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #042d63;
+            font-family: ' Croogla 4F Light', ' Fontatica 4F Regular',Croogla 4F Light,  Fontatica 4F Regular;
         }
 
         li{
@@ -129,10 +137,10 @@
             cursor: pointer;
             outline: none;
             color: #fff;
-            background-color: #04AA6D;
+            background-color: #176fe286;
             border: none;
             border-radius: 15px;
-            box-shadow: 0 9px #999;
+            box-shadow: 0 9px rgb(96, 159, 218);
         }
 
         .button:hover {
@@ -140,7 +148,7 @@
         }
 
         .button:active {
-            background-color: #3e8e41;
+            background-color: #d6d8d6;
             box-shadow: 0 5px #666;
             transform: translateY(4px);
         }
@@ -152,20 +160,19 @@
 </head>
 <body>
     <!-- main -->
+ <div id="grad">
     <div id="main">
         <!-- header -->
         <div header class="main-header">
             <div class="logo-holder"><a href="frontpage.html"><img src="{{ url_for('static', filename='logo.png') }}" alt="no"></a></div>
             
-                <ul class="navigation">
-                    <a><li>Home</li></a>
-                    <a><li>About</li></a>
-                    <a><li>Contact</li></a>
-                </ul>
+            <ul class="navigation">
+                <a><li>Early Cancer Diagnosis</li></a>
+            </ul>
             </div>
     <div id="content" class="column panel" role="main">
         <div class="panel-pane pane-node-title">
-            <h1 id="page-title" class="title">CANCER PROGNOSIS</h1>
+            <h1 id="page-title" class="title">CARCINOMA PROGNOSIS</h1>
             <br>
             <form action="" method="post">
             <button class="button">START TEST</button>
@@ -173,41 +180,46 @@
         </div>
         <div class="field field-name-body field-type-text-with-summary">
             <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
-                <p>A small innovation with existing technology for saving millions of life in the future.
-                    The mortality rate of cancer patients is shooting up to the sky just because of the simple fact that it was left undiagnosed.</p>
-                <p>The existing technology has all the access to diagnose cancer in a human being just by a MRI or CT scan. Some people, no matter how sick they are or what symptoms they have, simply won’t head to the hospital. This occurs for very silly yet true reasons, including:
+                <p>A small innovation with existing technology for saving millions of life in the future.</p>
+                <p>The existing technology has all the access to diagnose cancer in a human being just by a MRI or CT scan.
+                    Some reasons why cancer is lately diagnosed is:
                     <br>
-                    * Medical anxiety
-                    <br>
-                    
-                    * Symptoms aren’t serious or noticeable.
+                    1) Medical anxiety
                     <br>
                     
-                    * No time to visit a doctor or take regular health checkups 
+                    2) Symptoms aren’t serious or noticeable.
+                    <br>
+                    
+                    3) No time to visit a doctor or take regular health checkups 
                     <br>
                    
-                    * Economical issuess
+                    4) Economical issues
                     <br>       
-                    These reasons can all be ruled out by using the app which is totally developed just to diagnose cancer so that people can be made aware of their present health conditions and can take treatments accordingly.
+                    These reasons can all be ruled out by taking this test which dagnoses cancer
                 </p>
             </div>
-            <div class="content_sub_heading">The Cancer Prognosis features</div>
-            <li>*The app could "transform cancer care" by also making it easier for doctors and patients to save time as well as lives.
+            <br>
+            <div class="content_sub_heading">THE CANCER PROGNOSIS FEATURES</div>
+            <li>The test could "transform cancer care" by also making it easier for doctors and patients to save time as well as lives.
                 <br>
                 <br>
-                * It takes just few minutes to make the diagnosis, meaning patients don't have to spend days or weeks anxiously waiting for test results.
-                    + Symptoms like vision loss, un-indentified mole, weight loss can be treated carelessly by people thus leaving them at greater risks. This app can predict the occurrence of cancer and alert the given person so that he/she can go take other tests like CT or MRI to confirm it.
+                1)It takes just few minutes to make the diagnosis, meaning patients don't have to spend days or weeks anxiously waiting for test results.
                 <br>
                 <br>
-                * Notifications/reminders to perform self exams on a routine basis
+                2)Symptoms like vision loss, un-indentified mole, weight loss can be treated carelessly by people thus leaving them at greater risks. This app can predict the occurrence of cancer and alert the given person so that he/she can go take other tests like CT or MRI to confirm it.
                 <br>
                 <br>
-                * Storage of photos for baseline comparisons during routine follow-up self exams
+                3)Notifications/reminders to perform self exams on a routine basis
+                <br>
+                <br>
+                4)Storage of photos for baseline comparisons during routine follow-up self exams
             </li>
                 
-                
+       
         </div>
     </div>
-
+    
 </body>
 </html>
+
+
