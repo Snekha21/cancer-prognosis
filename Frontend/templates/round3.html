@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============== Basic ================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="image" type="images/png" href="images/logo.png">
+    <!-- =================== CSS ====================
+    <link type="text/css" rel="stylesheet" href="css/style.css"> -->
+
+    <title>ROUND 2</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            
+        }
+
+        .main-header{
+            /* position: fixed; */
+            width: 100%;
+            height: 300px;
+            display: block;
+            padding: 0 20px;
+            transition: all 200ms linear;
+            z-index: 50;
+            background: #654ea3; 
+            background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  
+            background: linear-gradient(to right, #eaafc8, #654ea3); 
+        }
+
+        .main-header p{
+            float: left;
+            position: relative;
+            top: 70px;
+            font-size: 70px;
+            font-family: 'Bree Serif', serif;
+            padding: 0 80px;
+            color: #ffffff;
+
+        }
+        
+        .navigation{
+            float: right;
+            height: 100%;
+            position: relative;
+            top: 200px;
+            margin-right: 50px;
+            opacity: 1;
+            right: 0;
+            visibility: visible;
+        
+        }
+
+        .navigation a{
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 50px;
+            position: relative;
+        
+        }
+        
+        .navigation a li{
+            display: table; 
+            vertical-align: bottom;
+            height: 100%;
+            color: #ffffff;
+            font-family: serif;
+            font-size: 27px;
+        }
+
+        .logo-holder {
+            position: absolute;
+            left: 100px;
+            top: 65px;
+          
+        }
+        
+        .logo-holder img {
+            width:700px;
+            height: 200px;
+            
+        }
+        .inner-header p{
+            font-size: 70px;
+            font-family: 'Bree Serif', serif;
+            padding: 0 80px;
+            font-weight: bold;
+            margin-left: 300px;
+            margin-top: -100px;
+        }
+
+        .para{
+            font-family:serif;
+        }
+
+        body{
+            margin: 0;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        #rt{
+            
+            height: 32cm;
+            width: 100%;
+            font-size: 32px;
+            margin-top: 3cm;
+            border-radius: 45px;
+            background-attachment: fixed;
+            }
+            
+        #dgh{
+            padding-left: 2.9cm;
+            padding-top : 1.2cm; 
+        }
+
+        #wrapper{
+
+            display: inline-block;
+            padding:50px;
+            width: 95%;
+        }
+
+        #wrapper p{
+            padding: 10px;
+        }
+        input[type=radio]{
+            margin-left: 35px;
+        }
+
+
+        .list-single-main-wrapper {
+	        padding-left:95px;
+        }
+
+        .scroll-nav-wrap {
+  
+            left: 0;
+            top: 0;	
+        }
+        .bn632-hover {
+            width: 200px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 800px;
+            height: 65px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .bn632-hover:hover {
+            background-position: 100% 0;
+            transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .bn632-hover:focus {
+            outline: none;
+        }
+
+        .bn632-hover.bn24 {
+            background-image: linear-gradient(
+                to right,
+                #6253e1,
+                #852d91,
+                #a3a1ff,
+                #f24645
+                );
+            box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+        }
+
+        .list-single-main-item {
+            padding:35px 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .fl-wrap {
+            float: left;
+            width: 100%;
+            height: 14600px;
+            position: relative;
+        }
+
+        .box-widget-title{
+            text-align: left;
+            font-weight: 600;
+            font-size: 68px;
+            color: #343c48;
+            margin: 20px 0 15px;
+            top: 40px;
+            margin-left: 700px;
+        }
+
+        .box-widget-title.box-widget-title-color {
+            margin-bottom:0;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 6px 6px 0 0;
+            font-size: 16px;
+        }
+
+        .box-widget-content {
+            padding:5px 30px;
+            background:rgb(228, 220, 220);
+            border-radius:6px;
+            border:1px solid rgb(160, 160, 160);
+            width: 70%;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <div id="main">
+        <!-- header -->
+        <div header class="main-header">
+            <div class="logo-holder"><a href="index.html"><img src="{{ url_for('static', filename='logo.png') }}" alt=""></a></div>
+            
+                <ul class="navigation">
+                    <a><li>Home</li></a>
+                    <a><li>About</li></a>
+                    <a><li>Contact</li></a>
+                </ul>
+            </div>
+
+        </div>
+        <div class="box-widget fl-wrap">
+            <div class="box-widget-content fl-wrap">
+                <!--widget-posts-->
+                <div class="widget-posts  fl-wrap">
+                    <div id="rt">
+                        <div id="dgh">
+                            <div id="wrapper">
+                                <div class="inner-header">
+                                    <form method="POST">
+                                    <p>ROUND 3</p>
+                                    <h3>LIVER</h3>
+                                    <br>
+                                    <div class="para">* Liver cancer is cancer that begins in the cells of your liver.
+                                        <br>
+                                        <br>
+                                        * Cancer that spreads to the liver is more common than cancer that begins in the liver cells. Cancer that begins in another area of the body — such as the colon, lung or breast — and then spreads to the liver is called metastatic cancer rather than liver cancer. 
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <label for="yes_no_radio">1) Are you Losing weight without trying?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio0" value="yes">Yes
+                                </p>
+                                <p>
+                                <input type="radio" name="lchoice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                            
+                                <label for="yes_no_radio">2) Are you Not having an appetite or feeling very full after eating a small amount of food?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio1" value="yes">Yes
+                                </p>
+                                <p>
+                                <input type="radio" name="lchoice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3)   Do you have frequent Nausea or vomiting?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                                
+                                <label for="yes_no_radio">4) Do you have An enlarged liver (This may feel like a mass under your ribs on your right side)?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Do you have An enlarged spleen (This may feel like a mass under your ribs on your left side)?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                                
+                                <label for="yes_no_radio">6) Do you have A swollen abdomen?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you have a Skin itching that does not have another cause?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                                
+                                <label for="yes_no_radio">8) Do you have Yellowing of your skin and the whites of your eyes (known as jaundice)?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Do you have any Abnormal bruising or bleeding?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                                
+                                <label for="yes_no_radio">10)Do you have Pale, chalky bowel movements and dark urine or Constipation?</label>
+                                <p>
+                                <input type="radio" name="lchoice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="lchoice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <h3>PANCREAS</h3>
+                                <br>
+                                <div class="para">* Pancreatic cancer begins in the tissues of your pancreas — an organ in your abdomen that lies behind the lower part of your stomach. Your pancreas releases enzymes that aid digestion and produces hormones that help manage your blood sugar.
+                                    <br>
+                                    <br>
+                                    * Pancreatic cancer is seldom detected at its early stages when it's most curable. This is because it often doesn't cause symptoms until after it has spread to other organs. 
+                                </div>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">1) Are you Losing weight without trying?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio0" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">2) Are you experiencing Pain in your upper abdomen that may go into to your back?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio1" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3) Do you have any Blood clots?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">4) Do you have diabetes?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Do you have Yellowing of your skin and the whites of your eyes (known as jaundice)?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">6) Do you have Light-colored stools or Dark urine?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you have any Pain in the upper or middle abdomen and back?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">8) Did you experience Weight loss for no known reason?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Do you feel very tired?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">10) Do you get frequent headaches?</label>
+                                <p>
+                                <input type="radio" name="pchoice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="pchoice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <h3>LEUKEMIA</h3>
+                                <br>
+                                <div class="para">* Leukemia is cancer of the  value="yes"body's blood-forming tissues, including the bone marrow and the lymphatic system.
+                                    <br>
+                                    <br>
+                                    * Leukemia usually involves the white blood cells. value="no" Your white blood cells are potent infection fighters — they normally grow and divide in an orderly way, as your body needs them. But in people with leukemia, the bone marrow produces an excessive amount of abnormal white blood cells, which don't function properly. 
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">1) Do you have Fever, chills, or night sweats?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio0" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">2) Do you Feel exhausted or weak often?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio1" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3) Do you have Swollen lymph nodes?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">4) Do you have An enlarged liver (which may feel like a mass under your ribs on your right side)?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Do you have An enlarged spleen (which may feel like a mass under your ribs on your left side)?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">6) Are you getting Frequent nosebleeds?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you get Bleeding or bruising easily?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">8) Do you have Tiny red spots on your skin?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Are you experiencing any Bone pain?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">10) Do you get infected easily?</label>
+                                <p>
+                                <input type="radio" name="bchoice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="bchoice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <h3>SKIN</h3>
+                                <br>
+                                <div class="para">* Skin cancer — the abnormal growth of skin cells — most often develops on skin exposed to the sun. But this common form of cancer can also occur on areas of your skin not ordinarily exposed to sunlight.
+                                    <br>
+                                    <br>
+                                    * You can reduce your risk of skin cancer by limiting or avoiding exposure to ultraviolet (UV) radiation. Checking your skin for suspicious changes can help detect skin cancer at its earliest stages. Early detection of skin cancer gives you the greatest chance for successful skin cancer treatment. 
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">1) Do you have any Sores that do not heal, or heal and then reappear?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio0" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">2) Do you have any Raised, scaly red patches?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio1" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3) Do you have any Small, shiny, smooth lumps that are pink, red, or white?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">4) Do you have any Pale, flat areas of skin that look like scars?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Do you have any Sores or growths that bleed, itch, or have small blood vessels on their surface?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">6) Do you have any Pink growths with raised edges or indents?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you have any mole or mark that is growing quickly or has changed color or shape?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">8) Do you often get headches?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Are you subjected to radiations more frequently?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">10) Do you have a fair skin which gets affected by sunlight easily?</label>
+                                <p>
+                                <input type="radio" name="schoice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="schoice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <h3>LUNGS</h3>
+                                <br>
+                                <div class="para">* Lung cancer is a type of cancer that begins in the lungs. Your lungs are two spongy organs in your chest that take in oxygen when you inhale and release carbon dioxide when you exhale..
+                                    <br>
+                                    <br>
+                                    * People who smoke have the greatest risk of lung cancer, though lung cancer can also occur in people who have never smoked. The risk of lung cancer increases with the length of time and number of cigarettes you've smoked. If you quit smoking, even after smoking for many years, you can significantly reduce your chances of developing lung cancer.
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">1) Are you suffering from A persistent cough that does not go away and gets worse over time?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio0" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">2) Are you Coughing up blood?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio1" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3) Do you have Wheezing or shortness of breath?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">4) Do you have a Constant chest pain?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Are you a patient of regular lung infections (like pneumonia or bronchitis)?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">6) Blood in sputum (mucus coughed up from the lungs)?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you have any Hoarseness in voice?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">8) Are you Feeling very tired often?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Do you have Trouble swallowing?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">10) Do you have Swelling in the face and/or veins in the neck?</label>
+                                <p>
+                                <input type="radio" name="llchoice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="llchoice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+
+
+                                
+                                    <button class="bn632-hover bn24">Next</button>
+                                </form>
+                            
+                </div>
+                
+    
+            </div>
+        </div>
+        <br>
+        <br>
+    
+    
+    
+      
+       
+
+
+  
+  
+    
+</body>
+</html>
+
