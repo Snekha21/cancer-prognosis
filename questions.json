@@ -1,0 +1,131 @@
+{
+    "Round_1" : [
+"Do you have a family history of having cancer?",
+"Do you have constant Nausea and vomiting?",
+"Is there any Appetite changes in the past few weeks?",
+"Do you have constant headaches that doesn't go away?",
+"Do you have any change in your vision?",
+"Is there a significant weight gain or weight loss?",
+"Do you have Fatigue that is severe and lasts?",
+"Do you get Fever or night sweats for no known reason?",
+"Do you have any unknown moles or lumps in your body?",
+"Is your age greater than 50?",
+"Were you affected by COVID?"] ,
+   
+"Round_2" : {
+
+        "Liver" : [
+
+"1)Do you have a habit of drinking alcohol?",
+"2)Do you smoke?",
+"3)Do you have/had hepatitis?",
+"4)Are you older than 50?"
+
+],
+        
+       "Pancreas" : [
+
+"1)Do you Smoke?",
+"2)Are you overweight?",
+"3)Do you Have a personal history of diabetes or chronic pancreatitis?"
+
+],
+
+       "Leukemia" : [
+
+ 
+"1)Are you older than 70?",
+"2)Are you exposed to radiations regularly?",
+"3)Do you have any genetic disorders?"
+
+],
+
+       "Skin"  : [
+          
+"1)Do you have a Fair skin that freckles and burns easily, does not tan, or tans poorly?",
+"2)Do you have any unidentified moles?",
+"3)Do you get sunburnt easily?",
+"4)Do you have light colour eyes - like blue/green?"
+      
+],
+
+        "Lungs"  : [
+
+"1)Do you smoke?",
+"2)Do you work in industrial places with asbestos/coal/arsenic?",
+"3)Were you previously diagnosed with COVID / Pneumonia / TB?"      
+
+]
+     
+    },
+
+    "Round_3" : {
+
+       "Liver"  : [
+
+"1)Are you Losing weight without trying?",
+"2)Are you Not having an appetite or feeling very full after eating a small amount of food?",
+"3)Do you have frequent Nausea or vomiting?",
+"4)Do you have An enlarged liver (This may feel like a mass under your ribs on your right side)?",
+"5)Do you have An enlarged spleen (This may feel like a mass under your ribs on your left side)?",
+"6)Do you have A swollen abdomen?",
+"7)Do you have a Skin itching that does not have another cause?",
+"8)Do you have Yellowing of your skin and the whites of your eyes (known as jaundice)?",
+"9)Do you have any Abnormal bruising or bleeding?",
+"10)Do you have Pale, chalky bowel movements and dark urine or Constipation?"
+
+       ],
+
+       "Lungs"  : [
+
+"1) Are you suffering from A persistent cough that does not go away and gets worse over time?",
+"2) Are you Coughing up blood?",
+"3) Do you have Wheezing or shortness of breath?",
+"4) Do you have a Constant chest pain",
+"5) Are you a patient of regular lung infections (like pneumonia or bronchitis)?",
+"6) Blood in sputum (mucus coughed up from the lungs)",
+"7) Do you have any Hoarseness in voice?",
+"8) Are you Feeling very tired often?",
+"9) Do you have Trouble swallowing?",
+"10)Do you have Swelling in the face and/or veins in the neck?"
+       ],
+
+       "Pancreas" : [              
+
+"1)Are you Losing weight without trying?",
+"2)Are you experiencing Pain in your upper abdomen that may go into to your back?",
+"3)Do you have any Blood clots?",
+"4)Do you have diabetes?",
+"5)Do you have Yellowing of your skin and the whites of your eyes (known as jaundice)?",
+"6)Do you have Light-colored stools or Dark urine?",
+"7)Do you have any Pain in the upper or middle abdomen and back?",
+"8)Did you experience Weight loss for no known reason?",
+"9)Do you Feel very tired?"
+       ],
+
+       "Leukemia" : [
+
+"1) Do you have Fever, chills, or night sweats?",
+"2) Do you Feel exhausted or weak often?",
+"3) Do you have Swollen lymph nodes?",
+"4) Do you have An enlarged liver (which may feel like a mass under your ribs on your right side)",
+"5) Do you have An enlarged spleen (which may feel like a mass under your ribs on your left side)",
+"6) Are you getting Frequent nosebleeds?",
+"7) Do you get Bleeding or bruising easily?",
+"8) Do you have Tiny red spots on your skin?",
+"9) Are you experiencing any Bone pain?",
+"10) Do you get infected easily?"
+       ],
+
+       "Skin"   : [
+
+"1) Do you have any Sores that do not heal, or heal and then reappear?",
+"2) Do you have any Raised, scaly red patches?",
+"3) Do you have any Small, shiny, smooth lumps that are pink, red, or white?",
+"4) Do you have any Pale, flat areas of skin that look like scars?",
+"5) Do you have any Sores or growths that bleed, itch, or have small blood vessels on their surface?",
+"6) Do you have any Pink growths with raised edges or indents?",
+"7) Do you have any mole or mark that is growing quickly or has changed color or shape?"
+       ]
+}
+}
