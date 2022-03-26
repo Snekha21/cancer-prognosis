@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cancer Prognosis login</title>
+    <link rel ="image" type="templates/images/png" href="images/logo1.png"/>
+
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        /* form {border: 100px solid #f1f1f1;} */
+        
+        input[type=text], input[type=password] {
+          width: 500px;
+          padding: 15px 20px;
+          margin: 8px 0;
+          display: inline-flex;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          
+        }
+
+        .label{
+          color: #ccc;
+        }
+        
+        /* .header {
+          font-size: 80px;
+          color: rgb(0, 0, 0);
+          font-family: 'Playfair Display', serif;
+          vertical-align: middle;
+           display: block;
+          padding: 0 300px;
+          margin-left: 150px;
+          margin-top: -40px;
+
+        }
+
+        .header span {
+          font-size: 42px;
+          margin-left: 160px;
+          font-family: 'Courier New', Courier, monospace;
+          padding-bottom: 100px;
+        } */
+         
+        button {
+          background-color: #e23089;
+          color: rgb(0, 0, 0);
+          padding: 14px 30px;
+          margin: 20px 0;
+          border: none;
+          cursor: pointer;
+          width: 500px;
+          height: 1.4cm;
+          font-size: 25px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+
+        .width-1-2 {
+          width: 700px;
+        }
+
+        .width-1-1{
+          width: 900px;
+        }
+        
+        .hwi{
+          font-family: 'EB Garamond', serif;
+          font-size: 52px;
+          font-weight: 500;
+          margin-left: 1100px;
+          margin-top: -650px;
+          font-weight: 700;
+
+        }
+        
+        .container {
+          padding: 100px;
+          width: 10px;
+          height: 150px;
+          font-size:32px;
+
+          
+        }
+
+        .ng-star-inserted{
+          margin-left: 1000px;
+          margin-top: -30px;
+
+        }
+        
+
+
+        
+        /* Change styles for span and cancel button on extra small screens
+        @media screen and (max-width: 100px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        } */
+
+        /* .header{
+            
+            margin:0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+
+        } */
+        </style>
+</head>
+<body>
+   <section _ngcontent-rwc-c9="" class="flex position-center">
+     <div _ngcontent-rwc-c9="" class="width-1-2 only-large-screen">
+        <img _ngcontent-rwc-c9="" class="width-1-1" img src="{{ url_for('static', filename='logo1.png') }}">
+      </div>
+      <div _ngcontent-rwc-c9="" class="width-1-2">
+        <div _ngcontent-rwc-c9="">
+          <div _ngcontent-rwc-c9="" class="flex flex-column width-3-4 width-75 center">
+            <div _ngcontent-rwc-c9="" style="width: 1000px;" class="hwi text-center margin-xs margin-top-s">LOGIN</div>
+            <div _ngcontent-rwc-c9="" class="border-line">
+            </div>
+          </div>
+          <!---->
+          <div _ngcontent-rwc-c9="" class="ng-star-inserted">
+            <form>
+        
+              <div class="container">
+                <label for="name" style="color: rgb(0, 0, 0);"><b>Name</b></label>
+                <input type="text" placeholder="Name" name="name" required>
+                
+                <label for="gender" style="color: rgb(0, 0, 0);"><b>Gender</b></label>
+                <!-- <input type="text" placeholder="Gender" name="gender" required> -->
+                <select style="width: 500px;height: 1.4cm;font-size: large;" placeholder="Gender" name="gender" class="slt">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">other</option>
+                </select>
+
+                <button type="submit" >LET'S BEGIN</button>
+                
+              </div>
+            
+          
+            
+            
+            </form>
+        
+        </div><!---->
+      </div>
+     
+    </section>
+
+</body>
+</html>

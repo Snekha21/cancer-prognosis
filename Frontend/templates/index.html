@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============== Basic ================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="image" type="images/png" href="images/logo.png">
+    <!-- =================== CSS ====================
+    <link type="text/css" rel="stylesheet" href="css/style.css"> -->
+
+    <title>ROUND 1</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            
+        }
+
+        .main-header{
+            /* position: fixed; */
+            width: 100%;
+            height: 300px;
+            display: block;
+            padding: 0 20px;
+            transition: all 200ms linear;
+            z-index: 50;
+            background: #654ea3; 
+            background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  
+            background: linear-gradient(to right, #eaafc8, #654ea3); 
+
+        }
+
+        .main-header p{
+            float: left;
+            position: relative;
+            top: 70px;
+            font-size: 70px;
+            font-family: 'Bree Serif', serif;
+            padding: 0 80px;
+            color: #ffffff;
+
+        }
+        
+        .navigation{
+            float: right;
+            height: 100%;
+            position: relative;
+            top: 200px;
+            margin-right: 50px;
+            opacity: 1;
+            right: 0;
+            visibility: visible;
+        
+        }
+
+        .navigation a{
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 50px;
+            position: relative;
+        
+        }
+        
+        .navigation a li{
+            display: table; 
+            vertical-align: bottom;
+            height: 100%;
+            color: #ffffff;
+            font-family: serif;
+            font-size: 27px;
+        }
+
+        .logo-holder {
+            position: absolute;
+            left: 100px;
+            top: 65px;
+          
+        }
+        
+        .logo-holder img {
+            width:700px;
+            height: 200px;
+            
+        }
+
+        .inner-header p{
+            font-size: 70px;
+            font-family: 'Bree Serif', serif;
+            padding: 0 80px;
+            font-weight: bold;
+            margin-left: 300px;
+            margin-top: -100px;
+        }
+
+        body{
+            margin: 0;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        #rt{
+            
+            height: 32cm;
+            width: 100%;
+            font-size: 32px;
+            margin-top: 3cm;
+            border-radius: 45px;
+            background-attachment: fixed;
+            }
+            
+        #dgh{
+            padding-left: 2.9cm;
+            padding-top : 1.2cm; 
+        }
+
+        #wrapper{
+
+            display: inline-block;
+            padding:50px;
+            width: 95%;
+        
+        }
+        #wrapper p{
+            padding: 10px;
+        }
+        input[type=radio]{
+            margin-left: 35px;
+        }
+
+        .list-single-main-wrapper {
+	        padding-left:95px;
+        }
+
+        .scroll-nav-wrap {
+  
+            left: 0;
+            top: 0;	
+        }
+        .bn632-hover {
+            width: 200px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 800px;
+            height: 65px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .bn632-hover:hover {
+            background-position: 100% 0;
+            transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .bn632-hover:focus {
+            outline: none;
+        }
+
+        .bn632-hover.bn24 {
+            background-image: linear-gradient(
+                to right,
+                #6253e1,
+                #852d91,
+                #a3a1ff,
+                #f24645
+                );
+            box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+        }
+
+        .list-single-main-item {
+            padding:35px 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .fl-wrap {
+            float: left;
+            width: 100%;
+            height: 3000px;
+            position: relative;
+        }
+
+        .box-widget-title{
+            text-align: left;
+            font-weight: 600;
+            font-size: 68px;
+            color: #343c48;
+            margin: 20px 0 15px;
+            top: 40px;
+            margin-left: 700px;
+        }
+
+        .box-widget-title.box-widget-title-color {
+            margin-bottom:0;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 6px 6px 0 0;
+            font-size: 16px;
+        }
+
+        .box-widget-content {
+            padding:5px 30px;
+            background:rgb(228, 220, 220);
+            border-radius:6px;
+            border:1px solid rgb(160, 160, 160);
+            width: 70%;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <div id="main">
+        <!-- header -->
+        <div header class="main-header">
+            <div class="logo-holder"><a href="index.html"><img src="{{ url_for('static', filename='logo.png') }}" alt=""></a></div>
+  
+                <ul class="navigation">
+                    <a><li>Home</li></a>
+                    <a><li>About</li></a>
+                    <a><li>Contact</li></a>
+                </ul>
+
+        </div> 
+        <div class="box-widget fl-wrap">
+            <div class="box-widget-content fl-wrap">
+                <!--widget-posts-->
+                <div class="widget-posts  fl-wrap">
+                    <div id="rt">
+                        <div id="dgh">
+                            <div id="wrapper">
+                                <div class="inner-header">
+                                    <p>ROUND 1</p>
+                                    <br>
+                                    <br>
+                                    <h3>BASIC QUESTIONS</h3>
+                                </div>
+                                <br>
+                                <br>
+                                <form method="post">
+                                <label for="yes_no_radio">1) Do you have a family history of having cancer?</label>
+                                <p>
+                                <input type="radio" name="choice-radio0" value="yes">Yes
+                                </p>
+                                <p>
+                                <input type="radio" name="choice-radio0" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                            
+                                <label for="yes_no_radio">2) Do you have constant Nausea and vomiting?</label>
+                                <p>
+                                <input type="radio" name="choice-radio1" value="yes">Yes
+                                </p>
+                                <p>
+                                <input type="radio" name="choice-radio1" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">3) Is there any Appetite changes in the past few weeks?</label>
+                                <p>
+                                <input type="radio" name="choice-radio2" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio2" value="no">No
+                                </p>
+                                <br>
+                                <br>
+                                
+                                <label for="yes_no_radio">4) Do you have constant headaches that doesn't go away?</label>
+                                <p>
+                                <input type="radio" name="choice-radio3" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio3" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">5) Do you have any change in your vision?</label>
+                                <p>
+                                <input type="radio" name="choice-radio4" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio4" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">6) Is there a significant weight gain or weight loss?</label>
+                                <p>
+                                <input type="radio" name="choice-radio5" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio5" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">7) Do you have Fatigue that is severe and lasts?</label>
+                                <p>
+                                <input type="radio" name="choice-radio6" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio6" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">8) Do you get Fever or night sweats for no known reason?</label>
+                                <p>
+                                <input type="radio" name="choice-radio7" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio7" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">9) Do you have any unknown moles or lumps in your body?</label>
+                                <p>
+                                <input type="radio" name="choice-radio8" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio8" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">10) Is your age greater than 50?</label>
+                                <p>
+                                <input type="radio" name="choice-radio9" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio9" value="no">No
+                                </p>
+                                <br>
+                                <br>
+
+                                <label for="yes_no_radio">11) Were you affected by COVID?</label>
+                                <p>
+                                <input type="radio" name="choice-radio10" value="yes">Yes
+                                </p> 
+                                <p>
+                                <input type="radio" name="choice-radio10" value="no">No
+                                </p>
+                                <br>
+
+                                <button>
+                                    <a href="round2.html"><button class="bn632-hover bn24">Next</button></a>
+                                </button>
+                            </form>
+                            
+                            </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+    
+    
+    
+      
+       
+
+
+  
+  
+    
+</body>
+</html>
+
