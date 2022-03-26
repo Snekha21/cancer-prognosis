@@ -1,7 +1,7 @@
 '''
 Created on 
-Course work: 
-@author: 
+Course work: Cancer Prognosis
+@author: Snekha
 Source:
     
 '''
@@ -9,6 +9,10 @@ Source:
 
 
 from flask import Flask, redirect, request, url_for, render_template
+import os
+
+
+PORT = os.environ["PY_PORT"]
 
 
 app = Flask(__name__)
@@ -124,4 +128,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=8000,debug=True)
+    app.run(host="0.0.0.0",port =PORT,debug=True)

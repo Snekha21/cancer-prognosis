@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    build: .
+    environment:
+      - PY_PORT=${PY_PORT}
+    ports:
+      - "${PY_PORT}:${PY_PORT}"
+    volumes:
+      - .:/code
