@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANCER PROGNOSIS</title>
+    <link rel ="image" type="images/png" href="images/logo.png">
+    <style>
+         *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            
+        }
+
+        .main-header{
+            /* position: fixed; */
+            width: 100%;
+            height: 300px;
+            display: block;
+            padding: 0 20px;
+            transition: all 200ms linear;
+            z-index: 50;
+            background-image: url("https://images.newscientist.com/wp-content/uploads/2020/08/19151113/19-aug_cancer-fatty-jackets.jpg");
+        }
+
+        .main-header p{
+            float: left;
+            position: relative;
+            top: 70px;
+            font-size: 70px;
+            font-family: 'Bree Serif', serif;
+            padding: 0 80px;
+            color: #ffffff;
+
+        }
+        
+        .navigation{
+            float: right;
+            height: 100%;
+            position: relative;
+            top: 200px;
+            margin-right: 50px;
+            opacity: 1;
+            right: 0;
+            visibility: visible;
+        
+        }
+
+        .navigation a{
+            height: 100%;
+            display: table;
+            float: left;
+            padding: 0px 50px;
+            position: relative;
+        
+        }
+        
+        .navigation a li{
+            display: table; 
+            vertical-align: bottom;
+            height: 100%;
+            color: #ffffff;
+            font-family: serif;
+            font-size: 27px;
+        }
+
+        .logo-holder {
+            position: absolute;
+            left: 100px;
+            top: 65px;
+          
+        }
+        
+        .logo-holder img {
+            width:700px;
+            height: 200px;
+            
+        }
+        #content{
+            padding:0 400px;
+            width: 800px;
+            margin-top: 100px;
+        }
+
+        .field-items{
+            margin-bottom: 0;
+            margin-top: 100px;
+            font-size: 25px;
+        }
+
+        .field-items p{
+            margin: 20px 0;
+        }
+
+        .title {
+            font-size: 55px;
+            font-weight: bold;
+            color: #000000;
+            padding: -100px;
+        }
+
+        p {
+            margin: 30px 0;
+            margin-top:80px ;
+        }
+
+        .content_sub_heading{
+            font-size: 30px;
+            font-weight: bold;
+            color: #000000;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        li{
+            margin-bottom: 0;
+            margin-top: 50px;
+            font-size: 25px;
+            padding:0 20px;
+
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <div id="main">
+        <!-- header -->
+        <div header class="main-header">
+            <div class="logo-holder"><a href="frontpage.html"><img src="{{ url_for('static', filename='logo.png') }}" alt="no"></a></div>
+            
+                <ul class="navigation">
+                    <a><li>Home</li></a>
+                    <a><li>About</li></a>
+                    <a><li>Contact</li></a>
+                </ul>
+            </div>
+    <div id="content" class="column panel" role="main">
+        <div class="panel-pane pane-node-title">
+            <h1 id="page-title" class="title">CANCER PROGNOSIS</h1>
+            <br>
+            <form action="" method="post">
+            <button class="button">START TEST</button>
+            </form>
+        </div>
+        <div class="field field-name-body field-type-text-with-summary">
+            <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
+                <p>A small innovation with existing technology for saving millions of life in the future.
+                    The mortality rate of cancer patients is shooting up to the sky just because of the simple fact that it was left undiagnosed.</p>
+                <p>The existing technology has all the access to diagnose cancer in a human being just by a MRI or CT scan. Some people, no matter how sick they are or what symptoms they have, simply won’t head to the hospital. This occurs for very silly yet true reasons, including:
+                    <br>
+                    * Medical anxiety
+                    <br>
+                    
+                    * Symptoms aren’t serious or noticeable.
+                    <br>
+                    
+                    * No time to visit a doctor or take regular health checkups 
+                    <br>
+                   
+                    * Economical issuess
+                    <br>       
+                    These reasons can all be ruled out by using the app which is totally developed just to diagnose cancer so that people can be made aware of their present health conditions and can take treatments accordingly.
+                </p>
+            </div>
+            <div class="content_sub_heading">The Cancer Prognosis features</div>
+            <li>*The app could "transform cancer care" by also making it easier for doctors and patients to save time as well as lives.
+                <br>
+                <br>
+                * It takes just few minutes to make the diagnosis, meaning patients don't have to spend days or weeks anxiously waiting for test results.
+                    + Symptoms like vision loss, un-indentified mole, weight loss can be treated carelessly by people thus leaving them at greater risks. This app can predict the occurrence of cancer and alert the given person so that he/she can go take other tests like CT or MRI to confirm it.
+                <br>
+                <br>
+                * Notifications/reminders to perform self exams on a routine basis
+                <br>
+                <br>
+                * Storage of photos for baseline comparisons during routine follow-up self exams
+            </li>
+                
+                
+        </div>
+    </div>
+
+</body>
+</html>
