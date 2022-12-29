@@ -3,7 +3,9 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 A Simple initiative to save millions of lives in the future!
-Diagnosing cancer patients by usng their symptoms
+Diagnosing cancer patients by using their symptoms
+Decision Tree Algorithm
+
 
 -------------------------------------------------------------------------------------------------------------------------------
 
